@@ -1,0 +1,3 @@
+[submodule "Q42.HueApi"]
+	path = Q42.HueApi
+	url = https://github.com/Q42/Q42.HueApi
