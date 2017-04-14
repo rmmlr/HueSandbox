@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Rca.HueSandbox
@@ -17,6 +18,7 @@ namespace Rca.HueSandbox
             var hue = new HueWrapper();
             Console.WriteLine("Scanning for bridges...");
             hue.ScanBridges();
+            Thread.Sleep(500);
             Console.WriteLine("IPs of found bridges:");
             foreach (var bridge in hue.LocatedBridges)
                 Console.WriteLine(bridge.IpAddress);
@@ -26,6 +28,9 @@ namespace Rca.HueSandbox
 
             hue.Initialize();
             Console.WriteLine("Bridge initialized");
+            Console.WriteLine("Press any key to switch out all lights");
+            Console.ReadKey();
+            hue.TestLight();
             Console.ReadKey();
         }
     }

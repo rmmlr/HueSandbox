@@ -1,11 +1,13 @@
 ﻿using Q42.HueApi;
 using Q42.HueApi.Interfaces;
 using Q42.HueApi.Models.Bridge;
+using Q42.HueApi.ColorConverters.OriginalWithModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Q42.HueApi.ColorConverters;
 
 namespace Rca.HueSandbox
 {
@@ -19,6 +21,7 @@ namespace Rca.HueSandbox
 
         #region Member
         AppKeyManager m_AppKeyManager;
+        ILocalHueClient m_Client;
 
         #endregion Member
 
@@ -48,13 +51,15 @@ namespace Rca.HueSandbox
         /// <summary>
         /// Scan for Bridges
         /// </summary>
-        public async void ScanBridges()
+        public async Task<string[]> ScanBridges()
         {
             IBridgeLocator locator = new HttpBridgeLocator();
             var bridgeIPs = await locator.LocateBridgesAsync(TimeSpan.FromSeconds(5));
-
+            
             foreach (LocatedBridge bridge in bridgeIPs)
                 LocatedBridges.Add(bridge);
+
+            return LocatedBridges.Select(x => x.IpAddress).ToArray();
         }
 
         /// <summary>
@@ -72,17 +77,83 @@ namespace Rca.HueSandbox
         /// Initialize a specific bridge
         /// </summary>
         /// <param name="bridgeIp">Ip of the bridge</param>
-        public async void Initialize(string bridgeIp)
+        public async Task<Bridge> Initialize(string bridgeIp)
         {
-            ILocalHueClient client = new LocalHueClient(bridgeIp);
+            m_Client = new LocalHueClient(bridgeIp);
 
             var appKey = m_AppKeyManager.AppKey;
             if (String.IsNullOrEmpty(appKey))
             {
-                appKey = await client.RegisterAsync(APP_NAME, DEVICE_NAME);
+                appKey = await m_Client.RegisterAsync(APP_NAME, DEVICE_NAME);
                 m_AppKeyManager.AppKey = appKey;
             }
-            client.Initialize(appKey);
+            m_Client.Initialize(appKey);
+
+            return await m_Client.GetBridgeAsync();
+        }
+
+        /// <summary>
+        /// Ruft die Namen aller aktiven Hue Geräte ab
+        /// </summary>
+        /// <returns></returns>
+        public async Task<Dictionary<string, string>> GetDevices()
+        {
+            var lights = await m_Client.GetLightsAsync();
+
+            var devices = new Dictionary<string, string>();
+
+            foreach (var light in lights)
+            {
+                devices.Add(light.Id, light.Name);
+            }
+
+            return devices;
+        }
+
+        /// <summary>
+        /// Verbindet ein Gerät
+        /// </summary>
+        /// <param name="id">Geräte Id</param>
+        /// <returns>Geräte Parameter</returns>
+        public async Task<Light> ConnectDevice(string id)
+        {
+            return await m_Client.GetLightAsync(id);
+        }
+
+        public void SwitchLight(string id, bool state)
+        {
+            var command = new LightCommand();
+            command.On = state;
+
+            m_Client.SendCommandAsync(command, new List<string>() { id });
+        }
+
+        public void SetColor(string id, int red, int green, int blue, string modell = "LCT001")
+        {
+            var color = new RGBColor(red, green, blue);
+            var command = new LightCommand();
+            command.SetColor(color, modell);
+
+            m_Client.SendCommandAsync(command, new List<string>() { id });
+        }
+
+        public void SetBrigthness(string id, int brightness)
+        {
+            byte value = Convert.ToByte(brightness);
+            var command = new LightCommand();
+            command.Brightness = value;
+
+            m_Client.SendCommandAsync(command, new List<string>() { id });
+        }
+
+        public async void TestLight()
+        {
+            var command = new LightCommand();
+            command.On = false;
+
+            var lights = await m_Client.GetLightsAsync();
+
+            m_Client.SendCommandAsync(command);
         }
 
         #endregion Services
