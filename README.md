@@ -7,6 +7,7 @@ Playing around with Philips Hue.
 + Show details and status of all Hue devices on the bridge
 + Control Hue devices (only static parameters)
 
+Screenshot of the GUI
 ![HueSandbox - Workbench Screenshot](/Docu/workbench_v02beta_screenshot.jpg "HueSandbox - Workbench Screenshot")
 
 
