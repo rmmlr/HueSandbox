@@ -8,7 +8,7 @@ Playing around with Philips Hue.
 + Control Hue devices (only static parameters)
 
 Screenshot of the GUI
-![HueSandbox - Workbench Screenshot](/Docu/workbench_v02beta_screenshot.jpg "HueSandbox - Workbench Screenshot")
+[HueSandbox - Workbench Screenshot](/Docu/workbench_v02beta_screenshot.jpg "HueSandbox - Workbench Screenshot")
 
 
 ## External libraries
