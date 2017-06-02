@@ -83,7 +83,7 @@
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Location = new System.Drawing.Point(315, 3);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(306, 381);
+            this.groupBox1.Size = new System.Drawing.Size(306, 335);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Hue Device";
@@ -102,7 +102,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(300, 362);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(300, 316);
             this.tableLayoutPanel2.TabIndex = 4;
             // 
             // tableLayoutPanel5
@@ -113,7 +113,7 @@
             this.tableLayoutPanel5.Controls.Add(this.btn_ConnectLight, 1, 0);
             this.tableLayoutPanel5.Controls.Add(this.btn_GetLights, 0, 0);
             this.tableLayoutPanel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel5.Location = new System.Drawing.Point(0, 332);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(0, 286);
             this.tableLayoutPanel5.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel5.Name = "tableLayoutPanel5";
             this.tableLayoutPanel5.RowCount = 1;
@@ -129,7 +129,7 @@
             this.btn_ConnectLight.Name = "btn_ConnectLight";
             this.btn_ConnectLight.Size = new System.Drawing.Size(192, 24);
             this.btn_ConnectLight.TabIndex = 3;
-            this.btn_ConnectLight.Text = "Verbinden";
+            this.btn_ConnectLight.Text = "Connect";
             this.btn_ConnectLight.UseVisualStyleBackColor = true;
             this.btn_ConnectLight.Click += new System.EventHandler(this.btn_ConnectLight_Click);
             // 
@@ -141,7 +141,7 @@
             this.btn_GetLights.Name = "btn_GetLights";
             this.btn_GetLights.Size = new System.Drawing.Size(96, 24);
             this.btn_GetLights.TabIndex = 4;
-            this.btn_GetLights.Text = "Abrufen";
+            this.btn_GetLights.Text = "Get Details";
             this.btn_GetLights.UseVisualStyleBackColor = true;
             this.btn_GetLights.Click += new System.EventHandler(this.btn_GetLights_Click);
             // 
@@ -162,7 +162,7 @@
             this.pgr_LightDetails.HelpVisible = false;
             this.pgr_LightDetails.Location = new System.Drawing.Point(3, 43);
             this.pgr_LightDetails.Name = "pgr_LightDetails";
-            this.pgr_LightDetails.Size = new System.Drawing.Size(294, 286);
+            this.pgr_LightDetails.Size = new System.Drawing.Size(294, 240);
             this.pgr_LightDetails.TabIndex = 1;
             this.pgr_LightDetails.ToolbarVisible = false;
             // 
@@ -172,7 +172,7 @@
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Location = new System.Drawing.Point(3, 3);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(306, 381);
+            this.groupBox2.Size = new System.Drawing.Size(306, 335);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Hue Bridge";
@@ -191,7 +191,7 @@
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 30F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(300, 362);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(300, 316);
             this.tableLayoutPanel3.TabIndex = 5;
             // 
             // pgr_BridgeDetails
@@ -200,7 +200,7 @@
             this.pgr_BridgeDetails.HelpVisible = false;
             this.pgr_BridgeDetails.Location = new System.Drawing.Point(3, 43);
             this.pgr_BridgeDetails.Name = "pgr_BridgeDetails";
-            this.pgr_BridgeDetails.Size = new System.Drawing.Size(294, 286);
+            this.pgr_BridgeDetails.Size = new System.Drawing.Size(294, 240);
             this.pgr_BridgeDetails.TabIndex = 1;
             this.pgr_BridgeDetails.ToolbarVisible = false;
             // 
@@ -212,7 +212,7 @@
             this.tableLayoutPanel4.Controls.Add(this.btn_ConnectBridge, 1, 0);
             this.tableLayoutPanel4.Controls.Add(this.btn_SearchBridges, 0, 0);
             this.tableLayoutPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 332);
+            this.tableLayoutPanel4.Location = new System.Drawing.Point(0, 286);
             this.tableLayoutPanel4.Margin = new System.Windows.Forms.Padding(0);
             this.tableLayoutPanel4.Name = "tableLayoutPanel4";
             this.tableLayoutPanel4.RowCount = 1;
@@ -228,7 +228,7 @@
             this.btn_ConnectBridge.Name = "btn_ConnectBridge";
             this.btn_ConnectBridge.Size = new System.Drawing.Size(192, 24);
             this.btn_ConnectBridge.TabIndex = 2;
-            this.btn_ConnectBridge.Text = "Verbinden";
+            this.btn_ConnectBridge.Text = "Connect";
             this.btn_ConnectBridge.UseVisualStyleBackColor = true;
             this.btn_ConnectBridge.Click += new System.EventHandler(this.btn_ConnectBridge_Click);
             // 
@@ -239,7 +239,7 @@
             this.btn_SearchBridges.Name = "btn_SearchBridges";
             this.btn_SearchBridges.Size = new System.Drawing.Size(96, 24);
             this.btn_SearchBridges.TabIndex = 3;
-            this.btn_SearchBridges.Text = "Suchen";
+            this.btn_SearchBridges.Text = "Search";
             this.btn_SearchBridges.UseVisualStyleBackColor = true;
             this.btn_SearchBridges.Click += new System.EventHandler(this.btn_SearchBridges_Click);
             // 
@@ -266,7 +266,7 @@
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(624, 387);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(624, 341);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
             // tableLayoutPanel6
@@ -281,7 +281,7 @@
             this.tableLayoutPanel6.RowCount = 2;
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel6.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel6.Size = new System.Drawing.Size(630, 787);
+            this.tableLayoutPanel6.Size = new System.Drawing.Size(630, 694);
             this.tableLayoutPanel6.TabIndex = 4;
             // 
             // groupBox3
@@ -294,19 +294,19 @@
             this.groupBox3.Location = new System.Drawing.Point(6, 6);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(300, 376);
+            this.groupBox3.Size = new System.Drawing.Size(300, 329);
             this.groupBox3.TabIndex = 15;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Steuerung";
+            this.groupBox3.Text = "Control";
             // 
             // btn_SetBrigthness
             // 
-            this.btn_SetBrigthness.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_SetBrigthness.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_SetBrigthness.Location = new System.Drawing.Point(168, 28);
             this.btn_SetBrigthness.Name = "btn_SetBrigthness";
             this.btn_SetBrigthness.Size = new System.Drawing.Size(77, 31);
             this.btn_SetBrigthness.TabIndex = 17;
-            this.btn_SetBrigthness.Text = "Set";
+            this.btn_SetBrigthness.Text = "Apply";
             this.btn_SetBrigthness.UseVisualStyleBackColor = true;
             this.btn_SetBrigthness.Click += new System.EventHandler(this.btn_SetBrigthness_Click);
             // 
@@ -315,9 +315,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(6, 40);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 13);
+            this.label1.Size = new System.Drawing.Size(56, 13);
             this.label1.TabIndex = 16;
-            this.label1.Text = "Helligkeit";
+            this.label1.Text = "Brightness";
             // 
             // txt_Brigthness
             // 
@@ -329,23 +329,23 @@
             // 
             // btn_SetColor
             // 
-            this.btn_SetColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_SetColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_SetColor.Location = new System.Drawing.Point(168, 21);
             this.btn_SetColor.Name = "btn_SetColor";
             this.btn_SetColor.Size = new System.Drawing.Size(77, 121);
             this.btn_SetColor.TabIndex = 14;
-            this.btn_SetColor.Text = "Set";
+            this.btn_SetColor.Text = "Apply";
             this.btn_SetColor.UseVisualStyleBackColor = true;
             this.btn_SetColor.Click += new System.EventHandler(this.btn_SetColor_Click);
             // 
             // btn_On
             // 
-            this.btn_On.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_On.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_On.Location = new System.Drawing.Point(153, 30);
             this.btn_On.Name = "btn_On";
             this.btn_On.Size = new System.Drawing.Size(110, 31);
             this.btn_On.TabIndex = 7;
-            this.btn_On.Text = "AN";
+            this.btn_On.Text = "ON";
             this.btn_On.UseVisualStyleBackColor = true;
             this.btn_On.Click += new System.EventHandler(this.btn_On_Click);
             // 
@@ -354,18 +354,18 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(6, 78);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(30, 13);
+            this.label4.Size = new System.Drawing.Size(36, 13);
             this.label4.TabIndex = 13;
-            this.label4.Text = "Grün";
+            this.label4.Text = "Green";
             // 
             // btn_Off
             // 
-            this.btn_Off.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Off.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Off.Location = new System.Drawing.Point(27, 30);
             this.btn_Off.Name = "btn_Off";
             this.btn_Off.Size = new System.Drawing.Size(110, 31);
             this.btn_Off.TabIndex = 6;
-            this.btn_Off.Text = "AUS";
+            this.btn_Off.Text = "OFF";
             this.btn_Off.UseVisualStyleBackColor = true;
             this.btn_Off.Click += new System.EventHandler(this.btn_Off_Click);
             // 
@@ -384,7 +384,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(28, 13);
             this.label3.TabIndex = 12;
-            this.label3.Text = "Blau";
+            this.label3.Text = "Blue";
             // 
             // txt_Green
             // 
@@ -399,9 +399,9 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(6, 33);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(24, 13);
+            this.label2.Size = new System.Drawing.Size(27, 13);
             this.label2.TabIndex = 11;
-            this.label2.Text = "Rot";
+            this.label2.Text = "Red";
             // 
             // txt_Blue
             // 
@@ -417,7 +417,7 @@
             this.pgr_StateDetails.HelpVisible = false;
             this.pgr_StateDetails.Location = new System.Drawing.Point(3, 16);
             this.pgr_StateDetails.Name = "pgr_StateDetails";
-            this.pgr_StateDetails.Size = new System.Drawing.Size(294, 357);
+            this.pgr_StateDetails.Size = new System.Drawing.Size(294, 310);
             this.pgr_StateDetails.TabIndex = 18;
             // 
             // groupBox4
@@ -434,7 +434,7 @@
             this.groupBox4.Size = new System.Drawing.Size(264, 155);
             this.groupBox4.TabIndex = 19;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Farbe";
+            this.groupBox4.Text = "Color";
             // 
             // groupBox5
             // 
@@ -455,11 +455,11 @@
             this.tableLayoutPanel7.Controls.Add(this.groupBox3, 0, 0);
             this.tableLayoutPanel7.Controls.Add(this.groupBox6, 1, 0);
             this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 396);
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 350);
             this.tableLayoutPanel7.Name = "tableLayoutPanel7";
             this.tableLayoutPanel7.RowCount = 1;
             this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(624, 388);
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(624, 341);
             this.tableLayoutPanel7.TabIndex = 4;
             // 
             // groupBox6
@@ -469,7 +469,7 @@
             this.groupBox6.Location = new System.Drawing.Point(318, 6);
             this.groupBox6.Margin = new System.Windows.Forms.Padding(6);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(300, 376);
+            this.groupBox6.Size = new System.Drawing.Size(300, 329);
             this.groupBox6.TabIndex = 16;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Hue Device - Details (State)";
@@ -478,10 +478,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(630, 787);
+            this.ClientSize = new System.Drawing.Size(630, 694);
             this.Controls.Add(this.tableLayoutPanel6);
             this.Name = "Form1";
-            this.Text = "HueSandbox - Workbench v0.1";
+            this.Text = "HueSandbox - Workbench v0.2-beta";
             this.groupBox1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);
