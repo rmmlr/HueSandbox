@@ -77,6 +77,13 @@ namespace HueSandbox_Form
 
         }
 
+        public State GetSettings(string id)
+        {
+            var light = BridgeDetails.Lights.First(x => x.Id == id);
+
+            return light.State;
+        }
+
         #endregion Services
 
         #region Internal services

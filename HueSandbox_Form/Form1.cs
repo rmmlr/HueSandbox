@@ -55,6 +55,9 @@ namespace HueSandbox_Form
 
         private async void btn_GetLights_Click(object sender, EventArgs e)
         {
+
+            pgr_StateDetails.SelectedObject = m_Controller.GetSettings(m_CurrentDeviceId);
+
             //var devices = await m_Controller.GetDevices();
 
             //var deviceNames = devices.Select(x => x.Value).ToArray();
@@ -77,10 +80,12 @@ namespace HueSandbox_Form
                 m_CurrentDeviceId = m_Controller.BridgeDetails.Lights.ElementAt(i).Id;
                 pgr_LightDetails.SelectedObject = m_Controller.GetDeviceDetails(m_CurrentDeviceId);
             }
+
+            btn_GetLights.Enabled = true;
         }
 
         private async void btn_ConnectLight_Click(object sender, EventArgs e)
-        {
+        {            
             //int i = cbx_LightSelector.SelectedIndex;
             //string id = m_Controller.HueDevices.ElementAt(i).Key;
 
