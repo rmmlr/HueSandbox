@@ -46,6 +46,10 @@ namespace HueSandbox_Form
             return await m_Hue.ScanBridges();
         }
 
+        /// <summary>
+        /// Baut eine Verbindung zur angegebenen Hue Bridge auf
+        /// </summary>
+        /// <returns>Hue Bridge</returns>
         public async Task<Bridge> ConnectBridge(string ip)
         {
             BridgeDetails = await m_Hue.Initialize(ip);
@@ -87,13 +91,9 @@ namespace HueSandbox_Form
         #endregion Services
 
         #region Internal services
-
-
         #endregion Internal services
 
         #region Events
-
-
         #endregion Events
     }
 }
