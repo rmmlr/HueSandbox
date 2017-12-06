@@ -1,13 +1,13 @@
 ﻿using Q42.HueApi;
+using Q42.HueApi.ColorConverters;
+using Q42.HueApi.ColorConverters.OriginalWithModel;
 using Q42.HueApi.Interfaces;
 using Q42.HueApi.Models.Bridge;
-using Q42.HueApi.ColorConverters.OriginalWithModel;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Q42.HueApi.ColorConverters;
 
 namespace Rca.HueSandbox
 {
