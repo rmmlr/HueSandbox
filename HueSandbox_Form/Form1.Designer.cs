@@ -44,24 +44,24 @@
             this.cbx_BridgeSelector = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel6 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.btn_SetBrigthness = new System.Windows.Forms.Button();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
             this.txt_Brigthness = new System.Windows.Forms.TextBox();
-            this.btn_SetColor = new System.Windows.Forms.Button();
-            this.btn_On = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.btn_Off = new System.Windows.Forms.Button();
-            this.txt_Red = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txt_Green = new System.Windows.Forms.TextBox();
+            this.btn_SetBrigthness = new System.Windows.Forms.Button();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_Blue = new System.Windows.Forms.TextBox();
-            this.pgr_StateDetails = new System.Windows.Forms.PropertyGrid();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.tableLayoutPanel7 = new System.Windows.Forms.TableLayoutPanel();
+            this.txt_Green = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txt_Red = new System.Windows.Forms.TextBox();
+            this.btn_SetColor = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.btn_On = new System.Windows.Forms.Button();
+            this.btn_Off = new System.Windows.Forms.Button();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.pgr_StateDetails = new System.Windows.Forms.PropertyGrid();
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel5.SuspendLayout();
@@ -70,10 +70,10 @@
             this.tableLayoutPanel4.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel6.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            this.groupBox5.SuspendLayout();
             this.tableLayoutPanel7.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox5.SuspendLayout();
+            this.groupBox4.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -160,6 +160,7 @@
             // 
             this.pgr_LightDetails.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pgr_LightDetails.HelpVisible = false;
+            this.pgr_LightDetails.LineColor = System.Drawing.SystemColors.ControlDark;
             this.pgr_LightDetails.Location = new System.Drawing.Point(3, 43);
             this.pgr_LightDetails.Name = "pgr_LightDetails";
             this.pgr_LightDetails.Size = new System.Drawing.Size(294, 240);
@@ -198,6 +199,7 @@
             // 
             this.pgr_BridgeDetails.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pgr_BridgeDetails.HelpVisible = false;
+            this.pgr_BridgeDetails.LineColor = System.Drawing.SystemColors.ControlDark;
             this.pgr_BridgeDetails.Location = new System.Drawing.Point(3, 43);
             this.pgr_BridgeDetails.Name = "pgr_BridgeDetails";
             this.pgr_BridgeDetails.Size = new System.Drawing.Size(294, 240);
@@ -284,6 +286,21 @@
             this.tableLayoutPanel6.Size = new System.Drawing.Size(630, 694);
             this.tableLayoutPanel6.TabIndex = 4;
             // 
+            // tableLayoutPanel7
+            // 
+            this.tableLayoutPanel7.ColumnCount = 2;
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel7.Controls.Add(this.groupBox3, 0, 0);
+            this.tableLayoutPanel7.Controls.Add(this.groupBox6, 1, 0);
+            this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 350);
+            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
+            this.tableLayoutPanel7.RowCount = 1;
+            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel7.Size = new System.Drawing.Size(624, 341);
+            this.tableLayoutPanel7.TabIndex = 4;
+            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.groupBox5);
@@ -299,16 +316,16 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Control";
             // 
-            // btn_SetBrigthness
+            // groupBox5
             // 
-            this.btn_SetBrigthness.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_SetBrigthness.Location = new System.Drawing.Point(168, 28);
-            this.btn_SetBrigthness.Name = "btn_SetBrigthness";
-            this.btn_SetBrigthness.Size = new System.Drawing.Size(77, 31);
-            this.btn_SetBrigthness.TabIndex = 17;
-            this.btn_SetBrigthness.Text = "Apply";
-            this.btn_SetBrigthness.UseVisualStyleBackColor = true;
-            this.btn_SetBrigthness.Click += new System.EventHandler(this.btn_SetBrigthness_Click);
+            this.groupBox5.Controls.Add(this.label1);
+            this.groupBox5.Controls.Add(this.txt_Brigthness);
+            this.groupBox5.Controls.Add(this.btn_SetBrigthness);
+            this.groupBox5.Location = new System.Drawing.Point(18, 239);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(264, 72);
+            this.groupBox5.TabIndex = 20;
+            this.groupBox5.TabStop = false;
             // 
             // label1
             // 
@@ -327,72 +344,32 @@
             this.txt_Brigthness.Size = new System.Drawing.Size(88, 31);
             this.txt_Brigthness.TabIndex = 15;
             // 
-            // btn_SetColor
+            // btn_SetBrigthness
             // 
-            this.btn_SetColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_SetColor.Location = new System.Drawing.Point(168, 21);
-            this.btn_SetColor.Name = "btn_SetColor";
-            this.btn_SetColor.Size = new System.Drawing.Size(77, 121);
-            this.btn_SetColor.TabIndex = 14;
-            this.btn_SetColor.Text = "Apply";
-            this.btn_SetColor.UseVisualStyleBackColor = true;
-            this.btn_SetColor.Click += new System.EventHandler(this.btn_SetColor_Click);
+            this.btn_SetBrigthness.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_SetBrigthness.Location = new System.Drawing.Point(168, 28);
+            this.btn_SetBrigthness.Name = "btn_SetBrigthness";
+            this.btn_SetBrigthness.Size = new System.Drawing.Size(77, 31);
+            this.btn_SetBrigthness.TabIndex = 17;
+            this.btn_SetBrigthness.Text = "Apply";
+            this.btn_SetBrigthness.UseVisualStyleBackColor = true;
+            this.btn_SetBrigthness.Click += new System.EventHandler(this.btn_SetBrigthness_Click);
             // 
-            // btn_On
+            // groupBox4
             // 
-            this.btn_On.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_On.Location = new System.Drawing.Point(153, 30);
-            this.btn_On.Name = "btn_On";
-            this.btn_On.Size = new System.Drawing.Size(110, 31);
-            this.btn_On.TabIndex = 7;
-            this.btn_On.Text = "ON";
-            this.btn_On.UseVisualStyleBackColor = true;
-            this.btn_On.Click += new System.EventHandler(this.btn_On_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 78);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(36, 13);
-            this.label4.TabIndex = 13;
-            this.label4.Text = "Green";
-            // 
-            // btn_Off
-            // 
-            this.btn_Off.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Off.Location = new System.Drawing.Point(27, 30);
-            this.btn_Off.Name = "btn_Off";
-            this.btn_Off.Size = new System.Drawing.Size(110, 31);
-            this.btn_Off.TabIndex = 6;
-            this.btn_Off.Text = "OFF";
-            this.btn_Off.UseVisualStyleBackColor = true;
-            this.btn_Off.Click += new System.EventHandler(this.btn_Off_Click);
-            // 
-            // txt_Red
-            // 
-            this.txt_Red.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Red.Location = new System.Drawing.Point(64, 21);
-            this.txt_Red.Name = "txt_Red";
-            this.txt_Red.Size = new System.Drawing.Size(88, 31);
-            this.txt_Red.TabIndex = 5;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 123);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(28, 13);
-            this.label3.TabIndex = 12;
-            this.label3.Text = "Blue";
-            // 
-            // txt_Green
-            // 
-            this.txt_Green.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Green.Location = new System.Drawing.Point(64, 66);
-            this.txt_Green.Name = "txt_Green";
-            this.txt_Green.Size = new System.Drawing.Size(88, 31);
-            this.txt_Green.TabIndex = 8;
+            this.groupBox4.Controls.Add(this.label2);
+            this.groupBox4.Controls.Add(this.txt_Blue);
+            this.groupBox4.Controls.Add(this.txt_Green);
+            this.groupBox4.Controls.Add(this.label3);
+            this.groupBox4.Controls.Add(this.txt_Red);
+            this.groupBox4.Controls.Add(this.btn_SetColor);
+            this.groupBox4.Controls.Add(this.label4);
+            this.groupBox4.Location = new System.Drawing.Point(18, 78);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(264, 155);
+            this.groupBox4.TabIndex = 19;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Color";
             // 
             // label2
             // 
@@ -411,56 +388,72 @@
             this.txt_Blue.Size = new System.Drawing.Size(88, 31);
             this.txt_Blue.TabIndex = 9;
             // 
-            // pgr_StateDetails
+            // txt_Green
             // 
-            this.pgr_StateDetails.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pgr_StateDetails.HelpVisible = false;
-            this.pgr_StateDetails.Location = new System.Drawing.Point(3, 16);
-            this.pgr_StateDetails.Name = "pgr_StateDetails";
-            this.pgr_StateDetails.Size = new System.Drawing.Size(294, 310);
-            this.pgr_StateDetails.TabIndex = 18;
+            this.txt_Green.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Green.Location = new System.Drawing.Point(64, 66);
+            this.txt_Green.Name = "txt_Green";
+            this.txt_Green.Size = new System.Drawing.Size(88, 31);
+            this.txt_Green.TabIndex = 8;
             // 
-            // groupBox4
+            // label3
             // 
-            this.groupBox4.Controls.Add(this.label2);
-            this.groupBox4.Controls.Add(this.txt_Blue);
-            this.groupBox4.Controls.Add(this.txt_Green);
-            this.groupBox4.Controls.Add(this.label3);
-            this.groupBox4.Controls.Add(this.txt_Red);
-            this.groupBox4.Controls.Add(this.btn_SetColor);
-            this.groupBox4.Controls.Add(this.label4);
-            this.groupBox4.Location = new System.Drawing.Point(18, 78);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(264, 155);
-            this.groupBox4.TabIndex = 19;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Color";
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 123);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(28, 13);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Blue";
             // 
-            // groupBox5
+            // txt_Red
             // 
-            this.groupBox5.Controls.Add(this.label1);
-            this.groupBox5.Controls.Add(this.txt_Brigthness);
-            this.groupBox5.Controls.Add(this.btn_SetBrigthness);
-            this.groupBox5.Location = new System.Drawing.Point(18, 239);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(264, 72);
-            this.groupBox5.TabIndex = 20;
-            this.groupBox5.TabStop = false;
+            this.txt_Red.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Red.Location = new System.Drawing.Point(64, 21);
+            this.txt_Red.Name = "txt_Red";
+            this.txt_Red.Size = new System.Drawing.Size(88, 31);
+            this.txt_Red.TabIndex = 5;
             // 
-            // tableLayoutPanel7
+            // btn_SetColor
             // 
-            this.tableLayoutPanel7.ColumnCount = 2;
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.Controls.Add(this.groupBox3, 0, 0);
-            this.tableLayoutPanel7.Controls.Add(this.groupBox6, 1, 0);
-            this.tableLayoutPanel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel7.Location = new System.Drawing.Point(3, 350);
-            this.tableLayoutPanel7.Name = "tableLayoutPanel7";
-            this.tableLayoutPanel7.RowCount = 1;
-            this.tableLayoutPanel7.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel7.Size = new System.Drawing.Size(624, 341);
-            this.tableLayoutPanel7.TabIndex = 4;
+            this.btn_SetColor.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_SetColor.Location = new System.Drawing.Point(168, 21);
+            this.btn_SetColor.Name = "btn_SetColor";
+            this.btn_SetColor.Size = new System.Drawing.Size(77, 121);
+            this.btn_SetColor.TabIndex = 14;
+            this.btn_SetColor.Text = "Apply";
+            this.btn_SetColor.UseVisualStyleBackColor = true;
+            this.btn_SetColor.Click += new System.EventHandler(this.btn_SetColor_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 78);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(36, 13);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Green";
+            // 
+            // btn_On
+            // 
+            this.btn_On.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_On.Location = new System.Drawing.Point(153, 30);
+            this.btn_On.Name = "btn_On";
+            this.btn_On.Size = new System.Drawing.Size(110, 31);
+            this.btn_On.TabIndex = 7;
+            this.btn_On.Text = "ON";
+            this.btn_On.UseVisualStyleBackColor = true;
+            this.btn_On.Click += new System.EventHandler(this.btn_On_Click);
+            // 
+            // btn_Off
+            // 
+            this.btn_Off.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Off.Location = new System.Drawing.Point(27, 30);
+            this.btn_Off.Name = "btn_Off";
+            this.btn_Off.Size = new System.Drawing.Size(110, 31);
+            this.btn_Off.TabIndex = 6;
+            this.btn_Off.Text = "OFF";
+            this.btn_Off.UseVisualStyleBackColor = true;
+            this.btn_Off.Click += new System.EventHandler(this.btn_Off_Click);
             // 
             // groupBox6
             // 
@@ -474,6 +467,16 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Hue Device - Details (State)";
             // 
+            // pgr_StateDetails
+            // 
+            this.pgr_StateDetails.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pgr_StateDetails.HelpVisible = false;
+            this.pgr_StateDetails.LineColor = System.Drawing.SystemColors.ControlDark;
+            this.pgr_StateDetails.Location = new System.Drawing.Point(3, 16);
+            this.pgr_StateDetails.Name = "pgr_StateDetails";
+            this.pgr_StateDetails.Size = new System.Drawing.Size(294, 310);
+            this.pgr_StateDetails.TabIndex = 18;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -481,7 +484,7 @@
             this.ClientSize = new System.Drawing.Size(630, 694);
             this.Controls.Add(this.tableLayoutPanel6);
             this.Name = "Form1";
-            this.Text = "HueSandbox - Workbench v0.2-beta";
+            this.Text = "HueSandbox - Workbench v0.3-beta";
             this.groupBox1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel5.ResumeLayout(false);
@@ -490,12 +493,12 @@
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel6.ResumeLayout(false);
+            this.tableLayoutPanel7.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
-            this.tableLayoutPanel7.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.ResumeLayout(false);
 

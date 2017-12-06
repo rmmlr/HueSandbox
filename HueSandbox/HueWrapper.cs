@@ -120,6 +120,11 @@ namespace Rca.HueSandbox
             return await m_Client.GetLightAsync(id);
         }
 
+        /// <summary>
+        /// Schalten des angegebenen Hue-Endpoints
+        /// </summary>
+        /// <param name="id">ID des Endpoints</param>
+        /// <param name="state">On/Off-State</param>
         public void SwitchLight(string id, bool state)
         {
             var command = new LightCommand();
@@ -128,6 +133,14 @@ namespace Rca.HueSandbox
             m_Client.SendCommandAsync(command, new List<string>() { id });
         }
 
+        /// <summary>
+        /// Setzen einer Farbe auf angegebenen Hue-Endpoint
+        /// </summary>
+        /// <param name="id">ID des Endpoints</param>
+        /// <param name="red">Hex-Wert für Rotanteil im RGB-Modell</param>
+        /// <param name="green">Hex-Wert für Grünanteil im RGB-Modell</param>
+        /// <param name="blue">Hex-Wert für Blauanteil im RGB-Modell</param>
+        /// <param name="modell">Modell-Id, zur genauen berechnung der einzustellenden Farbwerte</param>
         public void SetColor(string id, int red, int green, int blue, string modell = "LCT001")
         {
             var color = new RGBColor(red, green, blue);
@@ -137,6 +150,11 @@ namespace Rca.HueSandbox
             m_Client.SendCommandAsync(command, new List<string>() { id });
         }
 
+        /// <summary>
+        /// Setzen der Helligkeit auf angegebenen Hue-Endpoint
+        /// </summary>
+        /// <param name="id">ID des Endpoints</param>
+        /// <param name="brigthness">Hex-Wert für Helligkeit</param>
         public void SetBrigthness(string id, int brightness)
         {
             byte value = Convert.ToByte(brightness);
